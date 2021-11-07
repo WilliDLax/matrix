@@ -1,0 +1,16 @@
+/home/lax/cSharp/matrix/bin/Debug/net5.0/matrix
+/home/lax/cSharp/matrix/bin/Debug/net5.0/matrix.deps.json
+/home/lax/cSharp/matrix/bin/Debug/net5.0/matrix.runtimeconfig.json
+/home/lax/cSharp/matrix/bin/Debug/net5.0/matrix.runtimeconfig.dev.json
+/home/lax/cSharp/matrix/bin/Debug/net5.0/matrix.dll
+/home/lax/cSharp/matrix/bin/Debug/net5.0/ref/matrix.dll
+/home/lax/cSharp/matrix/bin/Debug/net5.0/matrix.pdb
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.csproj.AssemblyReference.cache
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.GeneratedMSBuildEditorConfig.editorconfig
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.AssemblyInfoInputs.cache
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.AssemblyInfo.cs
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.csproj.CoreCompileInputs.cache
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.dll
+/home/lax/cSharp/matrix/obj/Debug/net5.0/ref/matrix.dll
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.pdb
+/home/lax/cSharp/matrix/obj/Debug/net5.0/matrix.genruntimeconfig.cache
