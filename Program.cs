@@ -6,21 +6,36 @@ namespace matrix
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-            int[][] matrix = new int[][]{
-                new int[] {1,2,3,3},
-                new int[] {0,3,6,2},
-                new int[] {9,8,9,6},
-                new int[] {4,3,1,5},
-            };
+            Console.WriteLine("Matrix solver for Sophomores");
             Matrices test = new Matrices();
-            Console.WriteLine(test.Determinant(matrix));
+            test.MatrixExamples();
+
         }
     }
 
     class Matrices
     {
+        public void ShowJagMatrix(int[][] matrix){
+            int row = matrix.Length;
+            int col = matrix[0].Length;
+            for(int i = 0; i<row; i++){
+                for(int j = 0; j<col; j++){
+                    Console.Write(" " + matrix[i][j]);
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public void ShowMatrix(int[,] matrix){
+            int row = matrix.GetLength(0);
+            int col = matrix.GetLength(1);
+            for(int i = 0; i<row; i++){
+                for(int j = 0; j<col; j++){
+                    Console.Write(" " + matrix[i,j]);
+                }
+                Console.WriteLine();
+            }
+        }
         public void multiply(int[,] firstMat, int[,] secondMat)
         {
             int firstMatRows = firstMat.GetLength(0);
@@ -30,7 +45,7 @@ namespace matrix
 
             if (firstMatCols != secondMatRows)
             {
-                Console.WriteLine("The 2 matrices cannot be multiplied");
+                Console.WriteLine("The 2 matrices cannot be multiplied, product does not exist");
                 return;
             }
 
@@ -57,7 +72,7 @@ namespace matrix
 
             if (rowNum != colNum)
             {
-                throw new ArgumentException("Gerrout");
+                throw new ArgumentException("Wrong matrix type");
             }
 
             if (rowNum == 1 && colNum == 1)
@@ -124,6 +139,56 @@ namespace matrix
                 ++rowIndex;
             }
             return minor;
+        }
+
+        public void MatrixExamples(){
+            int[][] matrixA = new int[][]{
+                new int[] {1,2,3,3},
+                new int[] {0,3,6,2},
+                new int[] {9,8,9,6},
+                new int[] {4,3,1,5},
+            };
+
+            int[,] matrixB = new int[,]{
+                {1,2,3},
+                {4,5,6},
+                {7,8,9}
+            };
+
+            int[,] matrixC = new int[,]{
+                {2,1,3},
+                {6,4,5},
+                {8,9,7}
+            };
+
+            int[,] matrixD = new int[,]{
+                {1,2,3},
+                {4,5,6}
+            };
+
+            Console.WriteLine("Finding the determinant of a given matrix A: ");
+            ShowJagMatrix(matrixA);
+            Console.WriteLine("|A| = "+Determinant(matrixA));
+            Console.WriteLine("Press enter to continue");
+            Console.ReadKey();
+
+            Console.WriteLine("Multiplication of 2 matrices B and C : ");
+            ShowMatrix(matrixB);
+            Console.WriteLine();
+            ShowMatrix(matrixC);
+            Console.WriteLine();
+            Console.WriteLine("Result A*B = ");
+            Console.WriteLine();
+            multiply(matrixB,matrixC);
+            Console.WriteLine("Press enter to continue");
+            Console.ReadKey();
+
+            Console.WriteLine("The multiplication will fail if the number of columns of the first matrix is not equal to the number of rowsof the second");
+            Console.WriteLine("Take matrices C and D : ");
+            ShowMatrix(matrixC);
+            Console.WriteLine();
+            ShowMatrix(matrixD);
+            multiply(matrixC,matrixD);
         }
     }
 }
