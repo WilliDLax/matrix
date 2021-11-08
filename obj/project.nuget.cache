@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nMnqGyspQwkXgG4pDYmwZuXyGZHcuzw/9cPmdmHNyjfv6zCs0wWjcNoiKQbK6pjX9x09uk6GIGpgnA+hbSecPQ==",
+  "dgSpecHash": "L4pwB2Opjn0sXAWodhi/+KCdAswXSTCU+8kmVIvyiakCzhM0Sl5hGn2y4MyqG3YVhODZPeMQh2gcPxh8YepuNQ==",
   "success": true,
-  "projectFilePath": "/home/lax/cSharp/matrix/matrix.csproj",
+  "projectFilePath": "/Users/wemabank/Projects/matrix/matrix.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

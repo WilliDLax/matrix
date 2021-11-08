@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/home/lax/.nuget/packages/": {}
+    "/Users/wemabank/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lax/cSharp/matrix/matrix.csproj",
+      "projectUniqueName": "/Users/wemabank/Projects/matrix/matrix.csproj",
       "projectName": "matrix",
-      "projectPath": "/home/lax/cSharp/matrix/matrix.csproj",
-      "packagesPath": "/home/lax/.nuget/packages/",
-      "outputPath": "/home/lax/cSharp/matrix/obj/",
+      "projectPath": "/Users/wemabank/Projects/matrix/matrix.csproj",
+      "packagesPath": "/Users/wemabank/.nuget/packages/",
+      "outputPath": "/Users/wemabank/Projects/matrix/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/lax/.nuget/NuGet/NuGet.Config"
+        "/Users/wemabank/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -58,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.402/RuntimeIdentifierGraph.json"
       }
     }
   }
